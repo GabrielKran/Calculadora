@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #16161a;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.calculadora {
+    background-color: #fffffe;
+    padding: 22px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.display {
+    background-color: #e7e7e7;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 60px;
+    font-size: 1.5rem;
+    padding-right: 1px;
+    direction: rtl;
+    caret-color: transparent;
+}
+
+.buttons-deletes {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.buttons-deletes button {
+    /* flex-grow: 1; */
+    padding: 10px;
+    width: 50%;;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+
+    color: #FFFFFF;
+    background-color: #FF6347;
+}
+
+.numeros-operadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.numeros-operadores button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: #D3D3D3;
+    color: #333333;
+}
+
+.numeros-operadores .operador {
+    background-color: #FFA500;
+    color: #FFFFFF;
+}
+
+button {
+    cursor: pointer;
+}
