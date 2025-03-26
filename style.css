@@ -40,8 +40,9 @@ body {
     height: 60px;
     font-size: 1.5rem;
     padding-right: 1px;
-    direction: rtl;
+
     caret-color: transparent;
+    text-align: right;
 }
 
 .buttons-deletes {

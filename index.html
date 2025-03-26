@@ -12,7 +12,7 @@
         <div class="calculadora">
 
             <div class="display">
-                <input type="text" id="display" autofocus>
+                <input type="text" id="display" readonly>
             </div>
 
             <div class="buttons-deletes">
@@ -21,25 +21,25 @@
             </div>
 
             <div class="numeros-operadores">
-                <button onclick="appendToDisplay('7')">7</button>
-                <button onclick="appendToDisplay('8')">8</button>
-                <button onclick="appendToDisplay('9')">9</button>
-                <button class="operador" onclick="appendToDisplay('/')">/</button>
+                <button class="numero" onclick="appendNumber('7')">7</button>
+                <button class="numero" onclick="appendNumber('8')">8</button>
+                <button class="numero" onclick="appendNumber('9')">9</button>
+                <button class="operador" onclick="appendOperator('/')">/</button>
 
-                <button onclick="appendToDisplay('4')">4</button>
-                <button onclick="appendToDisplay('5')">5</button>
-                <button onclick="appendToDisplay('6')">6</button>
-                <button class="operador" onclick="appendToDisplay('*')">x</button>
+                <button class="numero" onclick="appendNumber('4')">4</button>
+                <button class="numero" onclick="appendNumber('5')">5</button>
+                <button class="numero" onclick="appendNumber('6')">6</button>
+                <button class="operador" onclick="appendOperator('*')">*</button>
 
-                <button onclick="appendToDisplay('1')">1</button>
-                <button onclick="appendToDisplay('2')">2</button>
-                <button onclick="appendToDisplay('3')">3</button>
-                <button class="operador" onclick="appendToDisplay('-')">-</button>
+                <button class="numero" onclick="appendNumber('1')">1</button>
+                <button class="numero" onclick="appendNumber('2')">2</button>
+                <button class="numero" onclick="appendNumber('3')">3</button>
+                <button class="operador" onclick="appendOperator('-')">-</button>
 
-                <button onclick="appendToDisplay('0')">0</button>
-                <button onclick="appendToDisplay('.')">.</button>
-                <button onclick="calculateResult()">=</button>
-                <button class="operador" onclick="appendToDisplay('+')">+</button>
+                <button class="numero" onclick="appendNumber('0')">0</button>
+                <button onclick="appendPoint('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button class="operador" onclick="appendOperator('+')">+</button>
             </div>
 
         </div>
